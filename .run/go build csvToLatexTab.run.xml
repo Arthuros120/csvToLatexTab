@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="go build csvToLatexTab" type="GoApplicationRunConfiguration"
+                   factoryName="Go Application" nameIsGenerated="true">
+        <module name="csvToLatexTab"/>
+        <working_directory value="$PROJECT_DIR$"/>
+        <parameters value="$ContentRoot$/resources/sample.csv $ContentRoot$/out"/>
+        <kind value="PACKAGE"/>
+        <package value="csvToLatexTab"/>
+        <directory value="$PROJECT_DIR$"/>
+        <filePath value="$PROJECT_DIR$/main.go"/>
+        <output_directory value="$PROJECT_DIR$/build"/>
+        <method v="2"/>
+    </configuration>
+</component>
