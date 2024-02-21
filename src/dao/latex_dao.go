@@ -81,15 +81,16 @@ func (dao *LatexDao) toLatex() string {
 
 func (dao *LatexDao) Write() {
 
-	nomFichier := dao.Path + "/" + dao.name + ".txt"
+	nomFichier := dao.name + ".txt"
+	chemin := dao.Path + "/" + nomFichier
 	contenu := dao.toLatex()
 
-	err := ioutil.WriteFile(nomFichier, []byte(contenu), 0644)
+	err := ioutil.WriteFile(chemin, []byte(contenu), 0644)
 	if err != nil {
 		fmt.Println("Error when write in out file: ", err)
 		return
 	}
 
-	fmt.Println("File created with success")
+	fmt.Printf("File %s created\n", nomFichier)
 
 }
